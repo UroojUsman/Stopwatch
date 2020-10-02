@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STOPWATCH</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style type="text/css">
+    body{
+        
+        color: rgb(16, 156, 46);
+        background: linear-gradient(to right, #212229, #572b2b, #9b8e8e) !important;
+       
+        text-align: center;
+    }
+    .stopwatch{
+        font-size: 80px;
+        font-family: monospace;
+
+    }
+  h1{
+      font-size: 60px;
+      font-weight: 700;
+      font-family: monospace;
+  }
+    ul{
+        margin: 0;
+        padding: 0;
+    }
+    ul li{
+        list-style: none;
+        padding: 5px 0;
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(242, 245, 238);
+    }
+    .btn
+    {
+        margin-bottom: 10px;
+        color: black;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    </style>
+</head>
+<body>
+    <div class="container" style="text-align: center;">
+        <div class="row" style="text-align: center; margin-top: 100px;">
+   <div class="col">
+          <div>
+          <h1 id="stopwatch"> 00:00:00</h1>
+       </div>
+    </div>
+        </div>
+   
+        <div class="row" style="text-align: center; margin-top: 20px; ">
+            <div class="col ">
+          <button onclick="start()"class="btn" >Start</button>
+       
+        
+          <button onclick="p()" class="btn">Pause</button>
+       
+       
+          <button onclick="stop()" class="btn">Reset</button>
+      
+       
+        <button onclick="restart()" class="btn">Restart</button>
+       
+       
+        <button onclick="lap()" class="btn">Lap</button>
+      
+       
+        <button onclick="reset_lap()" class="btn">Reset Laps</button>
+       </div>
+    </div>
+
+    <ul id="laps" class="laps">
+
+    </ul>
+
+</div>
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
